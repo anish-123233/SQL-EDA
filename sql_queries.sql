@@ -112,7 +112,7 @@ group by 1,2,3
 order by 4 desc
 
 
---10. Most populat genre from each country
+--10. Most popular genre from each country
 
 with pg as(
 	select i.billing_country,g.genre_id,g.name,count(il.quantity) as c,
